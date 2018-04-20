@@ -1,73 +1,15 @@
-<div class='landing-page'>
+<div id='landing' class='bg-primary min-vh-100 flex flex-column flex-auto justify-center'>
     <Nav />
-    <main>
+    <main class='primary pt5 pt6-l pb2 ph4 ph5-ns flex flex-column flex-auto justify-center tc'>
         <BrowserNotes />
-        <div class='intro-wrapper'>
-            <div class='intro-name'>Hello, I'm Tony!</div>
-            <div class='tagline'>Full Stack Dev | Open-Source Enthusiast | Blogger | Ninja</div>
+        <div class='flex-auto flex flex-column justify-center tc'>
+            <div class='f1 f-headline-ns b pb3 lh-copy'>Hello, I'm Tony!</div>
+            <div class='f3 f2-ns mv4 fw3 lh-title'>Full Stack Dev | Blogger | Progressive Web App Enthusiast</div>
             <SocialIcons />
         </div>
-        <ScrollToNext pageSelector='.about-page' />
+        <ScrollToNext pageSelector='#about' />
     </main>
 </div>
-
-<style>
-    .landing-page {
-        background-color: var(--color-alternate);
-        min-height: 100vh;
-        display: flex;
-        flex: 0 1 auto;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    main {
-        color: var(--color-primary);
-        display: flex;
-        flex: 1 0 auto;
-        flex-direction: column;
-        justify-content: center;
-        padding: 3.25rem 1.5rem 1rem;
-        text-align: center;
-    }
-
-    .intro-wrapper {
-        flex: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .intro-name {
-        font-family: 'Reem Kufi', sans-serif;
-        font-size: 4rem;
-        font-weight: bold;
-        line-height: 4rem;
-        padding-bottom: 1rem;
-    }
-
-    .tagline {
-        font-size: 1.375rem;
-        margin: 1.5rem 0;
-        font-weight: 300;
-    }
-
-    @media only screen and (max-width: 425px) {
-        main {
-            padding: 4.25rem 1.5rem 1rem;
-        }
-
-        .intro-name {
-            font-size: 3rem;
-            line-height: 3.5rem;
-        }
-
-        .tagline {
-            font-size: 1.25rem;
-        }
-    }
-</style>
 
 <script>
     import BrowserNotes from '../_components/BrowserNotes.html';
