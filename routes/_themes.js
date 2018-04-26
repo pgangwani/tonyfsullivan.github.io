@@ -49,6 +49,9 @@ const themes = [
     },
     {
         name: 'material-grey-alt'
+    },
+    {
+        name: 'teal'
     }
 ];
 
